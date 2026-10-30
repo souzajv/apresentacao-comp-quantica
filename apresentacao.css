@@ -1,0 +1,80 @@
+:root{--ink:#17243a;--muted:#526077;--accent:#305eb9;--rule:#c8d2df;--paper:#f7f8fa}
+.tpl-presenter-mode-reveal .slide{padding:100px 140px;background:var(--paper);color:var(--ink)}
+.tpl-presenter-mode-reveal .kicker{font:700 23px/1.2 Arial,sans-serif;letter-spacing:.13em;color:var(--accent);margin:0 0 42px;text-transform:uppercase}
+.tpl-presenter-mode-reveal .h1{font:700 120px/1.02 Georgia,serif;letter-spacing:-.045em;margin:0}
+.tpl-presenter-mode-reveal .h2{font:700 67px/1.1 Georgia,serif;letter-spacing:-.025em;margin:0 0 50px}
+.tpl-presenter-mode-reveal .accent{color:var(--accent)}
+.hero-sub{font-size:43px;line-height:1.3;margin-top:50px;color:var(--muted)}
+.cover-foot,.footnote{position:absolute;left:140px;right:140px;bottom:60px;font-size:21px;color:var(--muted);border-top:1px solid var(--rule);padding-top:20px}
+.large{font-size:43px;line-height:1.34;margin:0 0 34px}.narrow{max-width:1300px}.body-copy{font-size:29px;line-height:1.45;color:var(--muted);max-width:850px}
+.split-content{display:grid;grid-template-columns:1.5fr .8fr;gap:160px;align-items:start}.source-block{border-left:3px solid var(--accent);padding-left:45px;font-size:28px;line-height:1.35}.source-big{font:700 112px/1 Georgia,serif;color:var(--accent)}.source-block p{margin:16px 0}.source-block small{font-size:21px;color:var(--muted)}
+.steps,.levels,.evaluation{display:grid;gap:40px;margin-top:85px}.steps,.levels{grid-template-columns:repeat(4,1fr)}.steps>div,.levels>div,.evaluation>div{border-top:3px solid var(--accent);padding-top:24px}.steps b,.evaluation span{display:block;font-size:22px;color:var(--accent);margin-bottom:24px}.steps strong,.levels b{display:block;font-size:32px}.steps span,.levels span{display:block;font-size:24px;line-height:1.4;color:var(--muted);margin-top:14px}.levels{margin-top:90px}.levels b{font-size:28px}
+.bell-layout{display:grid;grid-template-columns:1.3fr .8fr;gap:110px;align-items:center;margin-top:85px}.circuit{position:relative}.wire{display:flex;align-items:center;height:120px;font:42px Georgia,serif}.wire span{width:105px}.wire i{height:3px;background:var(--ink);flex:1}.wire b{width:74px;height:74px;border:3px solid var(--ink);display:grid;place-items:center;font:700 38px Arial}.wire .ghost{visibility:hidden}.wire em{font:normal 64px/1 Arial;width:74px;text-align:center;z-index:1}.join{position:absolute;width:3px;background:var(--ink);height:120px;left:calc(100% - 74px - (100% - 105px - 222px)/3 - 37px);top:60px}.circuit-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:19px;margin-top:25px}.result{border-left:3px solid var(--accent);padding-left:50px}.result span{font-size:22px;color:var(--muted)}.result strong{display:block;font:700 48px/1.35 Georgia,serif;margin:20px 0}.result p{font-size:27px;line-height:1.5;color:var(--muted)}.result b{color:var(--ink)}
+.evaluation{grid-template-columns:repeat(3,1fr);margin-top:40px}.evaluation h3{font-size:32px;margin:0 0 18px}.evaluation p{font-size:25px;line-height:1.4;color:var(--muted);margin:0}.closing{font:italic 36px/1.3 Georgia,serif;margin-top:90px;max-width:1500px}
+@media print{.slide{break-after:page}.footnote,.cover-foot{bottom:60px}}
+:root{--ink:#3e2c28;--muted:#735d50;--accent:#b65b22;--rule:#e7cbb0;--paper:#fff8ed}
+.tpl-presenter-mode-reveal .slide{background:var(--paper)}
+.mascote{display:block;position:absolute;pointer-events:none}
+.capa-gato{right:190px;top:170px;width:630px;height:570px}
+.canto-gato{right:135px;top:65px;width:220px;height:190px}
+.original{grid-template-columns:1fr .65fr;gap:100px;margin-top:-15px}
+.original figure{margin:0;text-align:center;height:610px}
+.original img{max-width:100%;height:560px;object-fit:contain;border:1px solid var(--rule);background:white}
+.original figcaption{font-size:20px;color:var(--muted);margin-top:8px}
+/* Direção: as peças do circuito organizam o ritmo visual dos slides. */
+.tpl-presenter-mode-reveal .slide{padding:120px 140px;background:#fbf8f4}
+.tpl-presenter-mode-reveal .slide:nth-child(3),.tpl-presenter-mode-reveal .slide:nth-child(6){background:#f3e5d4}
+.tpl-presenter-mode-reveal .h1{font-size:132px;line-height:.98;color:var(--ink)}
+.tpl-presenter-mode-reveal .h1 .accent{color:inherit}
+.tpl-presenter-mode-reveal .h2{font-size:70px;margin-bottom:55px;max-width:1420px}
+.cover-foot,.footnote{border:0;padding:0;font-size:21px}
+.steps{gap:6px;margin-top:95px}
+.steps>div{background:#ead1b8;border:0;padding:35px 27px;min-height:205px}
+.steps>div:nth-child(even){background:#e1bb95}
+.levels{gap:0;margin-top:80px}
+.levels>div{border:0;padding:25px 30px 25px 0}
+.levels>div+div{padding-left:30px;border-left:4px solid #d8b99b}
+.evaluation{gap:65px;margin-top:65px;max-width:1570px}
+.evaluation>div{border:0;padding:0}
+.evaluation h3{font-size:32px;color:#a34a1c}
+.closing{margin-top:75px;max-width:1420px;font-style:normal;font-size:32px}
+.original img{border:0}
+.original .imagens-qscratch{display:grid;grid-template-columns:0.9fr 1.1fr;gap:24px;align-items:start}
+.original .imagens-qscratch figure{height:auto;margin:0}
+.original .imagens-qscratch img{width:100%;height:440px;object-fit:contain;object-position:center top}
+.original .imagens-qscratch figcaption{font-size:19px;line-height:1.3}
+.original{grid-template-columns:0.72fr 1.28fr;gap:55px}
+.original .imagens-qscratch{grid-template-columns:0.75fr 1.25fr;gap:26px}
+.original .imagens-qscratch img{height:550px}
+.capa-gato{right:170px;top:130px;width:720px;height:650px}
+.canto-gato{width:195px;height:175px;right:140px;top:65px}
+
+/* Identidade cartoon: contornos fortes e cores do mascote. */
+:root{--ink:#4b483f;--muted:#4b483f;--accent:#feac3c;--rule:#4b483f;--paper:#fffdf7}
+.tpl-presenter-mode-reveal .slide{background:var(--paper);color:var(--ink);font-family:"Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif}
+.tpl-presenter-mode-reveal .slide:nth-child(3),.tpl-presenter-mode-reveal .slide:nth-child(6){background:#fff2d8}
+.tpl-presenter-mode-reveal .h1,.tpl-presenter-mode-reveal .h2{font-family:"Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;font-weight:900;letter-spacing:-.035em;color:var(--ink)}
+.tpl-presenter-mode-reveal .h1 .accent{color:var(--ink)}
+.tpl-presenter-mode-reveal .h2{max-width:1400px}
+.hero-sub,.large,.body-copy,.steps span,.levels span,.evaluation p,.result p{color:var(--ink)}
+.steps{gap:14px}
+.steps>div,.steps>div:nth-child(even){background:#fffdf7;border:4px solid var(--ink);border-radius:20px;box-shadow:0 8px 0 var(--ink);padding:32px 25px}
+.steps>div:first-child,.steps>div:last-child{background:var(--accent)}
+.levels{gap:16px}
+.levels>div,.levels>div+div{border:4px solid var(--ink);border-radius:18px;padding:26px;background:#fff;box-shadow:0 7px 0 var(--ink)}
+.levels>div:first-child{background:#ffe1a9}
+.evaluation{gap:24px}
+.evaluation>div{border:4px solid var(--ink);border-radius:18px;padding:25px;background:#fffdf7;box-shadow:0 7px 0 var(--ink)}
+.evaluation h3{color:var(--ink)}
+.closing{font-family:"Trebuchet MS",Arial,sans-serif;font-weight:700}
+.wire b{border:4px solid var(--ink);border-radius:12px;background:var(--accent);color:var(--ink)}
+.wire .ghost{visibility:hidden}
+.result{border-left:6px solid var(--accent)}
+.result strong{font-family:"Trebuchet MS",Arial,sans-serif}
+.original .imagens-qscratch img{border:4px solid var(--ink);border-radius:14px;background:white}
+.canto-gato{width:234px;height:210px}
+.tpl-presenter-mode-reveal .h1 .title-q{color:#feac3c}
+.steps svg{display:block;width:53px;height:53px;margin-bottom:15px;fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.levels svg,.evaluation svg{display:block;width:48px;height:48px;margin-bottom:14px;fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.canto-gato{width:280.8px;height:252px}
+.slide[data-title="Proposta"] .canto-gato{width:476.576px;height:427.697px;top:35px;right:90px}
