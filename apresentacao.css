@@ -78,3 +78,7 @@
 .levels svg,.evaluation svg{display:block;width:48px;height:48px;margin-bottom:14px;fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 .canto-gato{width:280.8px;height:252px}
 .slide[data-title="Proposta"] .canto-gato{width:476.576px;height:427.697px;top:35px;right:90px}
+.gamificacao{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.gamificacao figure{margin:0;text-align:center}
+.gamificacao img{width:100%;max-height:520px;object-fit:contain;border:4px solid var(--ink);border-radius:18px;background:#fff}
+.gamificacao figcaption{font-size:20px;margin-top:12px;color:var(--ink)}
