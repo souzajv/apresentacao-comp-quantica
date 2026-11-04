@@ -83,3 +83,14 @@
 .gamificacao figure{margin:0;text-align:center}
 .gamificacao img{width:100%;max-height:520px;object-fit:contain;border:4px solid var(--ink);border-radius:18px;background:#fff}
 .gamificacao figcaption{font-size:20px;margin-top:12px;color:var(--ink)}
+.dois-publicos{grid-template-columns:repeat(2,1fr);max-width:1400px;margin-top:55px}
+.produto-real{display:grid;grid-template-columns:1.7fr .7fr;gap:55px;align-items:center}
+.produto-real figure{margin:0}
+.produto-real img{width:100%;border:4px solid var(--ink);border-radius:18px}
+.produto-real figcaption{font-size:20px;margin-top:12px}
+.gamificacao{grid-template-columns:.8fr 1.2fr;gap:45px}
+.gamificacao img{max-height:560px}
+.gamificacao .large{font-size:36px}
+.slide.is-active .h2,.slide.is-active .produto-real,.slide.is-active .gamificacao{animation:entrada-slide .45s ease-out both}
+@keyframes entrada-slide{from{opacity:.25;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.slide.is-active .h2,.slide.is-active .produto-real,.slide.is-active .gamificacao{animation:none}}
