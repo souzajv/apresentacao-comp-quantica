@@ -1,82 +1,116 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Circuit qScratch | Proposta de pesquisa</title>
-  <link rel="stylesheet" href="base.css">
-  <link rel="stylesheet" id="theme-link" href="theme.css">
-  <link rel="stylesheet" href="template.css">
-  <link rel="stylesheet" href="apresentacao.css">
-</head>
-<body class="tpl-presenter-mode-reveal">
-<div class="deck" data-w="1920" data-h="1080">
-  <section class="slide capa" data-title="Circuit qScratch">
-    <dotlottie-wc class="mascote capa-gato" src="https://assets-v2.lottiefiles.com/a/6c0548ba-e4ee-46f4-9ff6-d21142e6cdfb/OMSGkVND6g.lottie" autoplay loop aria-label="Gatinho professor animado"></dotlottie-wc>
-    <h1 class="h1">Circuit<br><span class="title-q">q</span>Scratch</h1>
-    <p class="hero-sub">Uma trilha para aprender a construir<br>um circuito quântico</p>
-    <p class="cover-foot">Inspirado no QScratch · Prévia interativa · Novembro de 2026</p>
-    <aside class="notes"><p>Minha pesquisa propõe o Circuit qScratch, uma experiência educacional inspirada no QScratch. Minha ideia é apresentar a construção de um circuito quântico a pessoas que estão começando, por meio de uma trilha guiada.</p><p>A prévia tem explicações para Fundamental Anos Finais e Ensino Médio. Vou apresentar a base da proposta, o circuito escolhido e como pretendo avaliar a experiência.</p></aside>
-  </section>
-  <section class="slide" data-title="Ponto de partida">
-    <h2 class="h2">O que é o QScratch?</h2>
-    <div class="split-content original"><div><p class="large">Uma extensão do Scratch que apresenta conceitos quânticos por meio de blocos.</p><p class="body-copy">Superposição, emaranhamento e medição são representados nas propriedades dos personagens.</p><p class="body-copy">O estudo piloto envolveu 68 estudantes de Engenharia Química.</p></div><div class="imagens-qscratch"><figure><img src="qscratch-7-Im2.jpg" alt="Paleta de blocos quânticos do QScratch original"><figcaption>Blocos Quantum</figcaption></figure><figure><img src="qscratch-personagens.jpg" alt="Personagens do exemplo de emaranhamento apresentado no artigo do QScratch"><figcaption>Personagens em um exemplo do QScratch</figcaption></figure></div></div>
-    <p class="footnote">Escanez-Exposito et al., 2025 · doi.org/10.1140/epjqt/s40507-025-00314-9</p>
-    <aside class="notes"><p>O QScratch parte da linguagem de blocos do Scratch para representar conceitos como superposição, emaranhamento e medição nas propriedades de personagens. É a ferramenta pedagógica que escolhi como base.</p><p>O estudo piloto original envolveu 68 estudantes do primeiro ano de Engenharia Química e combinou uma aula teórica com atividades na ferramenta. Ele não demonstra resultados para crianças nem permite atribuir as mudanças observadas apenas ao QScratch.</p><p>Fonte: Escanez-Exposito et al. (2025), https://doi.org/10.1140/epjqt/s40507-025-00314-9.</p></aside>
-  </section>
-  <section class="slide" data-title="Proposta">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/ccb39769-7c2b-416b-b4f7-c6a36159e369/CzxO6d9fNA.lottie" autoplay loop aria-label="Gatinho jogando xadrez"></dotlottie-wc>
-    <h2 class="h2">Aprender montando um circuito</h2>
-    <p class="large narrow">Uma prévia web com cinco blocos para descobrir e montar o circuito de Bell.</p>
-    <div class="steps"><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10c7-3 12-2 16 2v27c-4-4-9-5-16-2zM40 10c-7-3-12-2-16 2v27c4-4 9-5 16-2z"/></svg><strong>Conhecer</strong><span>conceitos e peças</span></div><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 6h12M21 6v14L11 36c-2 3 0 6 4 6h18c4 0 6-3 4-6L27 20V6M16 31h16"/></svg><strong>Experimentar</strong><span>perguntas e desafios</span></div><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h12v-2a4 4 0 0 1 8 0v2h12v11h-3a4 4 0 0 0 0 8h3v9H28v-3a4 4 0 0 0-8 0v3H8V28h3a4 4 0 0 0 0-8H8z"/></svg><strong>Montar</strong><span>o circuito passo a passo</span></div><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34a16 16 0 1 1 32 0H8zM24 32l8-11M12 29h3M33 29h3M24 18v3"/><circle cx="24" cy="32" r="2"/></svg><strong>Medir</strong><span>e compreender o resultado</span></div></div>
-    <p class="footnote">Um mascote orienta a experiência. A execução será uma simulação em computador clássico.</p>
-    <aside class="notes"><p>Desenvolvi uma interface própria em React, inspirada no QScratch, para uma plataforma acessada no computador. A pessoa aprende o papel das peças, responde a perguntas curtas e monta o circuito gradualmente, como um quebra-cabeça.</p><p>Um mascote acompanha o percurso e oferece explicações. O desenho inclui elementos de jogo e retorno às ações para apoiar a participação e despertar curiosidade. Isso é uma intenção da pesquisa, que ainda precisa ser avaliada. A execução usa um modelo ideal de dois qubits, simulado em computador clássico.</p></aside>
-  </section>
-  <section class="slide" data-title="Trilha gamificada">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/4cced8f7-fa9d-42b3-96ff-e0f53df23073/wApLF0JTol.lottie" autoplay loop aria-label="Gatinho feliz avaliando a experiência"></dotlottie-wc>
-    <h2 class="h2">Uma trilha gamificada</h2>
-    <div class="gamificacao"><div><p class="large">Uma sequência de desafios curtos, inspirada no modelo de trilha do Duolingo.</p><p class="body-copy">A prévia já reúne cinco blocos, desbloqueio gradual, quizzes, dicas e pontos de demonstração.</p><p class="body-copy">O mascote acompanha as explicações. Sons e animações podem ser ajustados nas preferências.</p></div><figure><img src="plataforma-trilha.png" alt="Tela real da trilha do Circuit QScratch"><figcaption>Tela atual da prévia interativa</figcaption></figure></div>
-    <p class="footnote">A experiência e seus efeitos serão avaliados durante a pesquisa.</p>
-    <aside class="notes"><p>Minha proposta usa uma trilha gamificada inspirada na organização de atividades do Duolingo. Cada etapa combina uma explicação, uma ação e retorno para a pessoa saber como avançar. Ao longo do percurso, ela constrói o circuito gradualmente.</p><p>A intenção é tornar o primeiro contato com a computação quântica convidativo e despertar curiosidade. Esses efeitos ainda precisam ser investigados; não estou apresentando resultados de aprendizagem.</p></aside>
-  </section>
-  <section class="slide" data-title="Atividade real">
-    <h2 class="h2">Explicação, teste e prática</h2>
-    <div class="produto-real"><figure><img src="plataforma-atividade.png" alt="Tela real de explicação sobre qubits com o gato professor"><figcaption>Atividade inicial da plataforma em funcionamento</figcaption></figure><div><p class="body-copy">O professor apresenta uma ideia por vez.</p><p class="body-copy">Depois, a pessoa responde ao quiz e realiza a prática.</p><p class="body-copy">A montagem aceita arraste ou seleção das peças.</p></div></div>
-    <aside class="notes"><p>Esta é uma captura real da prévia. As atividades separam descoberta, teste e prática. A interface já permite testar respostas e montar o circuito por encaixes. São evidências de implementação, ainda sem comprovação de aprendizagem.</p></aside>
-  </section>
-  <section class="slide" data-title="Escolaridade">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/1d4af2b2-8b7f-4938-a834-187efdc6f4f0/M7Mcvmydsg.lottie" autoplay loop aria-label="Gatinho escrevendo em uma prancheta"></dotlottie-wc>
-    <h2 class="h2">Uma trilha, dois públicos</h2>
-    <p class="large">A escolaridade orienta a linguagem e a profundidade das explicações.</p>
-    <div class="levels dois-publicos"><div><b>Fundamental Anos Finais</b><span>6º ao 9º ano<br>Primeiro contato com conceitos quânticos</span></div><div><b>Ensino Médio</b><span>Explicações com maior profundidade<br>O mesmo circuito e os mesmos objetivos</span></div></div>
-    <p class="footnote">O circuito é o mesmo. A escolha poderá ser alterada e não define o conhecimento prévio da pessoa.</p>
-    <aside class="notes"><p>O recorte atual inclui Fundamental Anos Finais e Ensino Médio. A escolha nas preferências muda as explicações, mantendo o mesmo circuito. O conteúdo ainda requer revisão pedagógica e avaliação com participantes. A escolaridade não determina o conhecimento prévio.</p></aside>
-  </section>
-  <section class="slide" data-title="Circuito de Bell">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/12900a72-1ed5-4bbd-8d70-5a27e2fa2879/0aSrmcIdAc.lottie" autoplay loop aria-label="Gatinho laranja pensativo"></dotlottie-wc>
-    <h2 class="h2">O circuito de Bell</h2>
-    <div class="bell-layout"><div class="circuit" aria-label="Circuito de Bell: H no primeiro qubit, CNOT com controle no primeiro e alvo no segundo, medição de ambos"><div class="wire"><span>|0⟩</span><i></i><b>H</b><i></i><em>●</em><i></i><b>M</b></div><div class="join"></div><div class="wire"><span>|0⟩</span><i></i><b class="ghost">H</b><i></i><em>⊕</em><i></i><b>M</b></div><div class="circuit-labels"><span>Preparação</span><span>Hadamard</span><span>CNOT</span><span>Medição</span></div></div><div class="result"><span>Estado ideal</span><strong>|Φ⁺⟩ =<br>(|00⟩ + |11⟩) / √2</strong><p>Na base computacional:<br><b>00</b> ou <b>11</b>, com 50% de probabilidade ideal para cada resultado.</p></div></div>
-    <p class="footnote">Com dois qubits, o circuito apresenta superposição, portas quânticas, emaranhamento e medição.</p>
-    <aside class="notes"><p>O primeiro desafio será preparar e medir um estado de Bell. Começo com dois qubits em zero. Aplico H ao primeiro e depois CNOT, usando o primeiro como controle e o segundo como alvo. Por fim, meço os dois.</p><p>No modelo ideal, o estado final é a soma de 00 e 11 dividida pela raiz de dois. Ao medir na base computacional, cada rodada produz 00 ou 11, com probabilidade ideal de 50% para cada resultado. Em poucas rodadas, as frequências podem ser diferentes. A correlação nessa única base, sozinha, não prova emaranhamento. Este é um exemplo didático inicial, e não uma solução de problema aplicado.</p></aside>
-  </section>
-  <section class="slide" data-title="Estado atual">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/dba6432f-476c-4ac5-bf32-73f4bc03d0f2/CZ5vmNGwmU.lottie" autoplay loop aria-label="Gatinho animado de carregamento"></dotlottie-wc>
-    <h2 class="h2">O que já funciona</h2>
-    <div class="evaluation"><div><h3>Trilha navegável</h3><p>Cinco blocos com explicações, perguntas, dicas e avanço gradual.</p></div><div><h3>Circuito interativo</h3><p>Encaixes, H, CNOT e medição pelo modelo ideal de Bell.</p></div><div><h3>Experiência guiada</h3><p>Mascotes animados, sons, preferências e pontos de demonstração.</p></div></div>
-    <p class="closing">Próximos passos: conta individual, salvamento online e avaliação com participantes.</p>
-    <p class="footnote">Nesta prévia, o progresso existe apenas durante a sessão. Supabase ainda não está integrado.</p>
-    <aside class="notes"><p>A prévia já reúne trilha, atividades e simulação. O modelo e regras possuem testes de unidade, mas isso não demonstra aprendizagem. Autenticação e persistência online continuam pendentes. A conclusão exibida na sessão também não equivale a um certificado emitido pelo servidor.</p></aside>
-  </section>
-  <section class="slide" data-title="Avaliação">
-    <dotlottie-wc class="mascote canto-gato" src="https://assets-v2.lottiefiles.com/a/add71288-2455-4e77-8f3e-a6a14dc15485/DnJFyG2gZm.lottie" autoplay loop aria-label="Gatinho observando com uma lupa"></dotlottie-wc>
-    <h2 class="h2">O que pretendo investigar</h2>
-    <div class="evaluation"><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32v26H8zM14 27l6 6 14-15"/></svg><h3>Correção técnica</h3><p>Conferir portas, estado e probabilidades com uma referência independente.</p></div><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="6"/></svg><h3>Experiência de uso</h3><p>Observar a navegação e a montagem com participantes disponíveis.</p></div><div><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M17 34h14M18 40h12M16 28c-3-3-5-6-5-10a13 13 0 0 1 26 0c0 4-2 7-5 10-2 2-2 3-2 6H18c0-3 0-4-2-6z"/></svg><h3>Compreensão e interesse</h3><p>Investigar as explicações e a curiosidade com instrumentos adequados ao público.</p></div></div>
-    <p class="closing">Como a trilha pode apresentar o circuito de Bell a iniciantes do Fundamental Anos Finais e Ensino Médio?</p>
-    <p class="footnote">A avaliação depende de acesso aos participantes e das condições institucionais. A proposta ainda está em desenvolvimento. <a href="CREDITOS.md">Créditos e licenças</a></p>
-    <aside class="notes"><p>Vou separar a verificação técnica da avaliação da experiência. Primeiro, pretendo conferir a implementação do circuito contra cálculos e uma referência independente. Depois, quero observar a navegação e a montagem com os participantes que estiverem disponíveis.</p><p>Também pretendo investigar a compreensão das explicações e, de forma exploratória, o interesse em continuar estudando. Os instrumentos e os grupos ainda precisam ser definidos. Resultados de um nível de escolaridade não serão automaticamente estendidos aos demais. A pesquisa ainda está em desenvolvimento, portanto ainda não tenho resultados de aprendizagem a apresentar.</p></aside>
-  </section>
-</div>
-<script src="runtime.js"></script>
-<script type="module" src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.28/dist/dotlottie-wc.js"></script>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Circuit qScratch | Entrega final</title><link rel="stylesheet" href="base.css"><link rel="stylesheet" id="theme-link" href="theme.css"><link rel="stylesheet" href="template.css"><link rel="stylesheet" href="apresentacao.css"></head><body class="tpl-presenter-mode-reveal"><div class="deck" data-w="1920" data-h="1080"><section class="slide cover" data-title="Circuit qScratch">
+      <div class="mascote capa-gato" data-cat="professor" role="img" aria-label="Gato animado: professor"></div>
+      
+<p class="eyeline">João Campos · Computação quântica</p>
+<h1 class="h1">Circuit<br><span class="title-q">q</span>Scratch</h1>
+<p class="hero-sub">Aprender montando.<br>Investigar pelas respostas.</p>
+<p class="cover-description">Uma trilha guiada até o circuito de Bell<br>e uma análise de quatro pares pré e pós.</p>
+
+      <footer class="source">Entrega final · Novembro de 2026<span>01 / 10</span></footer>
+      <aside class="notes"><p><b>0:00–0:20 · A ideia.</b> Eu desenvolvi o Circuit qScratch para apresentar conceitos quânticos por uma trilha visual em português. A pessoa aprende as peças enquanto monta um circuito de Bell. Vou mostrar a proposta, como comparei as respostas e o que encontrei em quatro registros. Depois, vou navegar pela plataforma.</p></aside>
+    </section>
+<section class="slide origin" data-title="O que é o QScratch?">
+      <div class="mascote canto-gato" data-cat="pensando" role="img" aria-label="Gato animado: pensando"></div>
+      
+<h2 class="h2">O que é o QScratch?</h2>
+<div class="qscratch-origin"><div class="origin-copy"><p class="lead">Uma extensão do Scratch para explorar conceitos quânticos com blocos e personagens.</p><p>Superposição, emaranhamento e medição aparecem nas propriedades dos personagens.</p><div class="origin-bridge"><h3>O que trouxe para meu projeto</h3><p>O ensino visual e a experimentação. No Circuit qScratch, desenvolvi uma trilha própria para montar e medir o circuito de Bell.</p></div></div><div class="origin-images"><figure class="img-frame contain"><img src="qscratch-7-Im2.jpg" alt="Paleta Quantum do QScratch original, com blocos de superposição, emaranhamento e medição"><figcaption>Blocos quânticos</figcaption></figure><figure class="img-frame contain"><img src="qscratch-personagens.jpg" alt="Dois gatos do Scratch em uma cena de exemplo de emaranhamento do QScratch"><figcaption>Personagens no QScratch</figcaption></figure></div></div>
+
+      <footer class="source">Escanez-Exposito et al. (2025) · <a href="https://doi.org/10.1140/epjqt/s40507-025-00314-9" target="_blank" rel="noopener">Artigo e imagens do QScratch · CC BY 4.0</a><span>02 / 10</span></footer>
+      <aside class="notes"><p><b>0:20–0:55 · Minha inspiração.</b> O QScratch é uma extensão do Scratch que usa blocos para explorar conceitos quânticos nas propriedades de personagens. Aqui aparecem os blocos Quantum e os gatos de um exemplo de emaranhamento.</p><p>Ele inspirou minha escolha pelo ensino visual e pela experimentação. No Circuit qScratch, fiz uma implementação própria, concentrada em uma trilha guiada para montar e medir Bell. Não realizei uma comparação de desempenho entre as ferramentas.</p></aside>
+    </section>
+<section class="slide warm" data-title="Cada ideia vira uma peça">
+      <div class="mascote canto-gato" data-cat="xadrez" role="img" aria-label="Gato animado: xadrez"></div>
+      
+<h2 class="h2">Cada ideia vira uma peça</h2>
+<p class="lead">Uma trilha comum para iniciantes, com montagem gradual do circuito de Bell.</p>
+<ol class="learning-path">
+<li><b>0 / 1</b><strong>Bit e qubit</strong><span>Preparar</span></li>
+<li><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 49a24 24 0 0 1 48 0ZM32 44l12-17"/></svg><strong>Medição</strong><span>Observar</span></li>
+<li><b>H</b><strong>Hadamard</strong><span>Comparar</span></li>
+<li><b>⊕</b><strong>CNOT</strong><span>Conectar</span></li>
+<li><b>Φ⁺</b><strong>Bell</strong><span>Montar e medir</span></li>
+</ol>
+<div class="idea-bottom"><div><h3>Descobrir → Testar → Experimentar</h3><p>Etapas, pontos, retorno imediato e um gato professor.<br>Inspiração visual: QScratch e a trilha do Duolingo.</p><p class="small">29 páginas de explicação · 15 perguntas · 5 práticas</p></div>
+<div class="bell-mini"><svg viewBox="0 0 610 210" role="img" aria-label="Dois qubits em zero. H no qubit superior, CNOT com controle superior e alvo inferior, seguida da medição de ambos."><g stroke="currentColor" stroke-width="5" fill="none"><path d="M85 55H560M85 155H560M350 55V155"/><rect x="165" y="20" width="70" height="70" rx="12" fill="var(--accent)"/><rect x="480" y="20" width="70" height="70" rx="12" fill="var(--paper)"/><rect x="480" y="120" width="70" height="70" rx="12" fill="var(--paper)"/><circle cx="350" cy="155" r="26" fill="var(--paper)"/><path d="M350 129v52M324 155h52"/><circle cx="350" cy="55" r="11" fill="currentColor"/></g><g fill="currentColor" font-family="Trebuchet MS" font-size="36" text-anchor="middle"><text x="41" y="68">|0⟩</text><text x="41" y="168">|0⟩</text><text x="200" y="68">H</text><text x="515" y="68">M</text><text x="515" y="168">M</text></g></svg><p>Ideal: 00 ou 11, cada um com 50% de chance.</p></div></div>
+
+      <footer class="source">Entrega final · Seções II e III · Modelo ideal simulado em computador clássico<span>03 / 10</span></footer>
+      <aside class="notes"><p><b>0:55–1:35 · Percurso e conteúdo.</b> Minha implementação é própria, inspirada no ensino visual do QScratch. A organização da trilha lembra o Duolingo. São cinco blocos, com explicação, quiz e prática, e todos recebem o mesmo conteúdo. A escolaridade caracteriza o público; não altera as explicações.</p><p>Começo com dois qubits em zero. H no primeiro e CNOT com controle no primeiro e alvo no segundo preparam Bell. A medição ideal pode dar 00 ou 11, com 50% para cada resultado. Isso apresenta superposição, portas, emaranhamento e medição em um circuito pequeno, simulado em computador clássico. Uma série curta não precisa se dividir exatamente ao meio, e a correlação nessa base sozinha não prova emaranhamento.</p><p>Os pontos tornam o avanço visível; seu efeito educacional não foi isolado.</p></aside>
+    </section>
+<section class="slide " data-title="O que perguntei antes e depois">
+      <div class="mascote canto-gato" data-cat="prancheta" role="img" aria-label="Gato animado: prancheta"></div>
+      
+<h2 class="h2">O que perguntei<br>antes e depois</h2>
+<div class="survey-grid"><article class="panel"><h3>Antes da trilha</h3><p class="small">8 perguntas</p><ul><li>Escolaridade</li><li>Contato anterior com computação quântica</li><li>Primeira tentativa de aprender</li><li>Conhecimento prévio de circuitos</li></ul><div class="paired">Interesse + confiança<br>Medição + porta H</div></article>
+<article class="panel orange"><h3>Depois da trilha</h3><p class="small">7 etapas, incluindo comentário opcional</p><div class="paired">Interesse + confiança<br>Medição + porta H</div><ul><li>“Foi fácil entender as explicações?”</li><li>“Foi fácil descobrir o que fazer em cada etapa?”</li><li>“O que poderíamos explicar melhor?”</li></ul></article></div>
+<p class="scale">Escala de percepção: Nada · Pouco · Mais ou menos · Bastante · Muito</p>
+
+      <footer class="source">Entrega final · Seção IV · Instrumento v3 · <a href="perguntas.html" target="_blank" rel="noopener">Ver todas as perguntas</a><span>04 / 10</span></footer>
+      <aside class="notes"><p><b>1:35–2:15 · Instrumentos.</b> No pré, eu pergunto escolaridade e contato anterior, além de interesse, confiança e dois itens de conteúdo. No pós, repito as quatro medidas e acrescento clareza, facilidade de uso e um comentário opcional.</p><p>Interesse é a vontade de aprender mais. Confiança é sentir-se capaz de começar a estudar. A escala vai de Nada a Muito. Comparo cada registro com ele mesmo e mantenho essas medidas separadas. A versão utilizada é a 3. Os questionários são diferentes dos quizzes que pontuam na trilha.</p><p>Os enunciados e alternativas completos estão no material de apoio.</p></aside>
+    </section>
+<section class="slide warm" data-title="Duas perguntas de conteúdo">
+      <div class="mascote canto-gato" data-cat="pensando" role="img" aria-label="Gato animado: pensando"></div>
+      
+<h2 class="h2">Duas perguntas de conteúdo</h2>
+<p class="lead">Os mesmos itens no pré e no pós, sem correção durante o formulário.</p>
+<div class="question-grid"><article class="panel"><span class="question-icon">M</span><h3>Medição</h3><blockquote>“Ao medir um qubit, qual resultado aparece em uma única medição?”</blockquote><p class="answer"><span>Resposta esperada</span>Um resultado: 0 ou 1</p></article>
+<article class="panel"><span class="question-icon">H</span><h3>Hadamard</h3><blockquote>“Neste circuito, o que a porta H faz quando é aplicada uma vez a um qubit preparado em 0?”</blockquote><p class="answer"><span>Resposta esperada</span>Prepara chances iguais de medir 0 ou 1</p></article></div>
+<p class="takeaway">De 0 a 2 acertos por pessoa. Esses itens não avaliam todo o circuito.</p>
+
+      <footer class="source">Entrega final · Seção IV-B · Instrumento v3 · Mesmas perguntas antes e depois<span>05 / 10</span></footer>
+      <aside class="notes"><p><b>2:15–2:55 · O que a comparação mede.</b> A primeira questão verifica se a pessoa distingue uma medição única de duas possibilidades. A segunda trata de H aplicada uma vez a um qubit preparado em zero. Cada acerto vale uma unidade, com máximo de dois.</p><p>São perguntas próprias do projeto, ainda sem validação. Como os enunciados se repetem, familiaridade com a pergunta também pode contribuir para a mudança. Não avaliei CNOT nem emaranhamento nesses formulários. Os 50 pontos possíveis no jogo são outra medida e não entram nessa conta.</p></aside>
+    </section>
+<section class="slide " data-title="Quem entrou na análise">
+      <div class="mascote canto-gato" data-cat="brincando" role="img" aria-label="Gato animado: brincando"></div>
+      
+<h2 class="h2">Quem entrou na análise</h2>
+<div class="sample-layout"><ol class="sample-flow"><li><b>12</b><span>documentos de progresso<br>consultados</span></li><li><b>5</b><span>com os cinco blocos<br>concluídos</span></li><li class="orange"><b>4</b><span>com pré e pós enviados<br>na versão 3</span></li></ol>
+<div class="sample-profile"><h3>Nos quatro registros</h3><p><b>3</b> Ensino Superior incompleto<br><b>1</b> Ensino Médio</p><div class="profile-note">Todos já tinham ouvido falar do tema.<br>Três estavam tentando estudar pela primeira vez.<br>Nenhum declarou conhecer circuitos quânticos.</div></div></div>
+<p class="takeaway">O critério de seleção foi definido após a coleta.</p>
+
+      <footer class="source">Entrega final · Seção IV-A · Consulta ao Firestore em 11/11/2026<span>06 / 10</span></footer>
+      <aside class="notes"><p><b>2:55–3:30 · Recorte.</b> A consulta de 11 de novembro encontrou 12 documentos de progresso. Cinco tinham concluído os blocos, mas quatro também tinham enviado os dois formulários na versão 3. Estes são os quatro pares analisados.</p><p>Três declararam Superior incompleto e um Ensino Médio. Essa informação não determina idade nem vínculo institucional. Não vou comparar escolaridades com esse grupo. Também não trato os outros documentos como abandono: o recorte não permite concluir isso.</p></aside>
+    </section>
+<section class="slide warm" data-title="Os acertos aumentaram nos quatro pares">
+      <div class="mascote canto-gato" data-cat="avaliando" role="img" aria-label="Gato animado: avaliando"></div>
+      
+<h2 class="h2">Os acertos aumentaram<br>nos quatro pares</h2>
+<div class="result-layout"><div class="score-callout"><p>Total nas duas perguntas</p><div class="score-pair"><div><b>1<span>/8</span></b><small>Antes</small></div><strong aria-hidden="true">→</strong><div><b>7<span>/8</span></b><small>Depois</small></div></div><p class="score-caption">8 respostas = 4 pessoas × 2 perguntas</p><div class="item-scores"><p><strong>Medição</strong><span>1/4 → 4/4</span></p><p><strong>Porta H</strong><span>0/4 → 3/4</span></p></div></div>
+<div class="panel result-table"><table><caption>Acertos por registro (máximo: 2)</caption><thead><tr><th>Código</th><th>Pré</th><th>Pós</th><th>Diferença</th></tr></thead><tbody><tr><th>P05</th><td>0</td><td>2</td><td>+2</td></tr><tr><th>P07</th><td>0</td><td>1</td><td>+1</td></tr><tr><th>P08</th><td>0</td><td>2</td><td>+2</td></tr><tr><th>P11</th><td>1</td><td>2</td><td>+1</td></tr></tbody></table><p>Média: <b>0,25 → 1,75</b> acerto</p></div></div>
+<p class="takeaway">Mudança observada neste grupo; não estabelece causa.</p>
+
+      <footer class="source">Entrega final · Seção V · Tabela 2 · Quatro pares de 11/11/2026<span>07 / 10</span></footer>
+      <aside class="notes"><p><b>3:30–4:20 · Resultado de conteúdo.</b> Somando os dois itens, o total passou de um para sete acertos em oito respostas. São quatro pessoas respondendo a duas perguntas, e não oito participantes independentes. Todos os pares tiveram aumento.</p><p>Na medição, passei de um para quatro acertos. Em H, de zero para três. A média passou de 0,25 para 1,75, numa escala que termina em dois. A tabela permite ver cada par sem expor nomes.</p><p>Esse resultado está na direção da hipótese, mas não comprova que a plataforma causou aprendizagem. O grupo é pequeno, foi selecionado entre concluintes e respondeu às mesmas questões.</p></aside>
+    </section>
+<section class="slide " data-title="Confiança e interesse mudaram de formas diferentes">
+      <div class="mascote canto-gato" data-cat="professor" role="img" aria-label="Gato animado: professor"></div>
+      
+<h2 class="h2">Confiança e interesse<br>mudaram de formas diferentes</h2>
+<div class="experience-layout"><div><p class="lead">Mudança nos mesmos quatro registros</p><div class="change-row"><h3>Confiança</h3><div class="units" aria-label="3 aumentaram, 1 ficou igual, 0 diminuíram"><i class="up">↑</i><i class="up">↑</i><i class="up">↑</i><i>=</i></div><p>3 aumentaram · 1 ficou igual</p></div><div class="change-row"><h3>Interesse</h3><div class="units" aria-label="1 aumentou, 3 ficaram iguais, 0 diminuíram"><i class="up">↑</i><i>=</i><i>=</i><i>=</i></div><p>1 aumentou · 3 ficaram iguais</p></div><p class="small">Cada quadrado representa um registro, sem identificar a pessoa.</p></div>
+<article class="panel feedback"><h3>Como avaliaram a experiência?</h3><p>Clareza das explicações</p><div class="rating-list"><span>Mais ou menos <b>1</b></span><span>Bastante <b>2</b></span><span>Muito <b>1</b></span></div><p>Facilidade de uso</p><div class="rating-list"><span>Bastante <b>3</b></span><span>Muito <b>1</b></span></div></article></div>
+
+      <footer class="source">Entrega final · Seção V · Tabela 3 · Perguntas próprias de percepção, sem nota SUS<span>08 / 10</span></footer>
+      <aside class="notes"><p><b>4:20–5:05 · Percepções.</b> A confiança aumentou em três registros, enquanto o interesse aumentou em um. Nos demais, cada medida ficou igual; nenhuma diminuiu. Isso mostra por que eu separei interesse e confiança.</p><p>Na clareza, houve uma resposta Mais ou menos, duas Bastante e uma Muito. Na facilidade de uso, três Bastante e uma Muito. São duas perguntas próprias da plataforma, não uma nota SUS. Esses dados também não isolam o efeito do gato, dos pontos ou das animações.</p></aside>
+    </section>
+<section class="slide warm" data-title="O que posso concluir">
+      <div class="mascote canto-gato" data-cat="pensando" role="img" aria-label="Gato animado: pensando"></div>
+      
+<h2 class="h2">O que posso concluir</h2>
+<p class="conclusion">Construí uma trilha funcional.<br>Observei melhora nas respostas<br>de um grupo de quatro pessoas.</p>
+<div class="limits-grid"><div><h3>Limites</h3><p>Grupo pequeno e apenas concluintes.<br>Duas perguntas repetidas.<br>Sem grupo de comparação ou teste posterior.</p></div><div><h3>Próxima avaliação</h3><p>Definir o plano antes da coleta.<br>Incluir CNOT e emaranhamento.<br>Ampliar a amostra e verificar retenção.</p></div></div>
+<p class="takeaway">Ainda não posso atribuir a mudança à plataforma ou à gamificação.</p>
+
+      <footer class="source">Entrega final · Seções VI a IX · Resultados restritos ao recorte analisado<span>09 / 10</span></footer>
+      <aside class="notes"><p><b>5:05–5:45 · Conclusão e limites.</b> Tenho uma implementação funcional e mudanças descritivas em quatro pares. Não tenho uma demonstração de eficácia educacional. O instrumento não foi validado, as perguntas se repetem e quem não concluiu pode ter vivido uma experiência diferente.</p><p>Meu próximo passo é planejar a avaliação antes de coletar, ampliar os itens com CNOT e emaranhamento, usar versões equivalentes e avaliar depois de um intervalo. Também preciso registrar ajuda recebida e interrupções. A validação técnica por matrizes documentada na Sprint 2 verifica o cálculo, mas é diferente de avaliar aprendizagem.</p></aside>
+    </section>
+<section class="slide demo" data-title="Agora, na plataforma">
+      <div class="mascote canto-gato" data-cat="lupa" role="img" aria-label="Gato animado: lupa"></div>
+      
+<h2 class="h2">Agora, na plataforma</h2>
+<p class="demo-title">Da explicação<br>à montagem de Bell.</p>
+<ol class="demo-list"><li>Trilha e exemplo interativo</li><li>Quiz, previsão e bancada</li><li>Medição e acompanhamento pelo professor</li></ol>
+<a class="demo-button" href="https://circuit-qscratch.vercel.app/" target="_blank" rel="noopener">Abrir a plataforma <span aria-hidden="true">↗</span></a>
+<p class="demo-url">circuit-qscratch.vercel.app</p>
+
+      <footer class="source"><a href="apoio.html" target="_blank" rel="noopener">Capturas de apoio</a> · <a href="perguntas.html" target="_blank" rel="noopener">Questionários</a> · <a href="CREDITOS.md" target="_blank" rel="noopener">Créditos</a><span>10 / 10</span></footer>
+      <aside class="notes"><p><b>5:45–6:00 · Passagem à demonstração.</b> Agora vou mostrar como isso aparece na experiência. Vou percorrer uma explicação, uma pergunta, a bancada e o acompanhamento do professor.</p><p><b>6:00–6:40:</b> abra a trilha já preparada e mostre Descobrir, Testar e Experimentar. <b>6:40–7:20:</b> compare uma e duas H no exemplo. <b>7:20–8:25:</b> use uma tentativa de demonstração já adiantada para mostrar uma pergunta, a previsão e H/CNOT na bancada. <b>8:25–9:00:</b> prepare e meça Bell, explicando a diferença entre chances e frequências. <b>9:00–9:30:</b> mostre o painel com aluno fictício, progresso e erros. <b>9:30–10:00:</b> conclua: entreguei o percurso e encontrei mudanças nas respostas; a próxima etapa é uma avaliação mais ampla.</p><p>Não percorra as 29 páginas nem responda a todos os quizzes durante a fala. Deixe a conta de demonstração e as abas prontas. Se a conexão falhar, use as capturas de apoio. Não exiba dados pessoais dos participantes.</p></aside>
+    </section></div><script src="runtime.js"></script><script src="vendor/lottie.min.js"></script><script src="assets/mascotes.js"></script><script src="mascotes.js"></script></body></html>
