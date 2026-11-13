@@ -58,9 +58,11 @@ Na clareza, houve uma resposta Mais ou menos, duas Bastante e uma Muito. Na faci
 
 ## O que posso concluir
 
-5:05–5:45 · Conclusão e limites. Tenho uma implementação funcional e mudanças descritivas em quatro pares. Não tenho uma demonstração de eficácia educacional. O instrumento não foi validado, as perguntas se repetem e quem não concluiu pode ter vivido uma experiência diferente.
+5:05–5:45 · Conclusão e planos futuros. Construí uma trilha funcional e observei mudanças em quatro pares. Não consegui testar com muitas pessoas: o prazo de entrega e as revisões constantes do conteúdo limitaram essa etapa.
 
-Meu próximo passo é planejar a avaliação antes de coletar, ampliar os itens com CNOT e emaranhamento, usar versões equivalentes e avaliar depois de um intervalo. Também preciso registrar ajuda recebida e interrupções. A validação técnica por matrizes documentada na Sprint 2 verifica o cálculo, mas é diferente de avaliar aprendizagem.
+Quero testar com o público-alvo previsto, criar novas trilhas e incluir ranking, ofensivas de dias de estudo e outros elementos de gamificação para incentivar o engajamento. Esse efeito ainda precisa ser avaliado.
+
+Se houver pergunta sobre o método: o instrumento não foi validado, repete duas questões e analisa apenas concluintes, sem grupo de comparação ou teste posterior. Esses limites permanecem; os resultados não demonstram causa.
 
 ## Agora, na plataforma
 
