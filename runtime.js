@@ -1004,18 +1004,25 @@
       const ind = document.querySelector('.anim-indicator');
       if (ind) ind.textContent = a;
     }
-    /* Clickable side margins, outside the slide content. */
+    /* Full-height viewport edges, including letterboxed side margins. */
     [-1, 1].forEach(function (direction) {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'edge-nav ' + (direction < 0 ? 'edge-prev' : 'edge-next');
       button.setAttribute('aria-label', direction < 0 ? 'Slide anterior' : 'Próximo slide');
-      button.innerHTML = '<span aria-hidden="true">' + (direction < 0 ? '‹' : '›') + '</span>';
       button.addEventListener('click', function () { go(idx + direction); });
       button.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') e.stopPropagation();
       });
-      deck.appendChild(button);
+      document.body.appendChild(button);
+      const fitEdge = function () {
+        const rect = deck.getBoundingClientRect();
+        const margin = direction < 0 ? rect.left : window.innerWidth - rect.right;
+        button.style.width = Math.max(0, margin + rect.width * 100 / 1920) + 'px';
+      };
+      fitEdge();
+      window.addEventListener('resize', fitEdge);
+      if (window.visualViewport) window.visualViewport.addEventListener('resize', fitEdge);
     });
     document.addEventListener('keydown', function (e) {
       if (e.metaKey||e.ctrlKey||e.altKey) return;
