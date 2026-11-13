@@ -22,9 +22,15 @@ Começo com dois qubits em zero. H no primeiro e CNOT com controle no primeiro e
 
 Os pontos tornam o avanço visível; seu efeito educacional não foi isolado.
 
+## Quem entrou na análise
+
+1:35–2:10 · Recorte. A consulta de 11 de novembro encontrou 12 documentos de progresso. Cinco tinham concluído os blocos, mas quatro também tinham enviado os dois formulários na versão 3. Estes são os quatro pares analisados.
+
+Três declararam Superior incompleto e um Ensino Médio. Essa informação não determina idade nem vínculo institucional. Não vou comparar escolaridades com esse grupo. Também não trato os outros documentos como abandono: o recorte não permite concluir isso.
+
 ## O que perguntei antes e depois
 
-1:35–2:15 · Instrumentos. No pré, eu pergunto escolaridade e contato anterior, além de interesse, confiança e dois itens de conteúdo. No pós, repito as quatro medidas e acrescento clareza, facilidade de uso e um comentário opcional.
+2:10–2:50 · Instrumentos. No pré, eu pergunto escolaridade e contato anterior, além de interesse, confiança e dois itens de conteúdo. No pós, repito as quatro medidas e acrescento clareza, facilidade de uso e um comentário opcional.
 
 Interesse é a vontade de aprender mais. Confiança é sentir-se capaz de começar a estudar. A escala vai de Nada a Muito. Comparo cada registro com ele mesmo e mantenho essas medidas separadas. A versão utilizada é a 3. Os questionários são diferentes dos quizzes que pontuam na trilha.
 
@@ -32,15 +38,9 @@ Os enunciados e alternativas completos estão no material de apoio.
 
 ## Duas perguntas de conteúdo
 
-2:15–2:55 · O que a comparação mede. A primeira questão verifica se a pessoa distingue uma medição única de duas possibilidades. A segunda trata de H aplicada uma vez a um qubit preparado em zero. Cada acerto vale uma unidade, com máximo de dois.
+2:50–3:30 · O que a comparação mede. A primeira questão verifica se a pessoa distingue uma medição única de duas possibilidades. A segunda trata de H aplicada uma vez a um qubit preparado em zero. Cada acerto vale uma unidade, com máximo de dois.
 
 São perguntas próprias do projeto, ainda sem validação. Como os enunciados se repetem, familiaridade com a pergunta também pode contribuir para a mudança. Não avaliei CNOT nem emaranhamento nesses formulários. Os 50 pontos possíveis no jogo são outra medida e não entram nessa conta.
-
-## Quem entrou na análise
-
-2:55–3:30 · Recorte. A consulta de 11 de novembro encontrou 12 documentos de progresso. Cinco tinham concluído os blocos, mas quatro também tinham enviado os dois formulários na versão 3. Estes são os quatro pares analisados.
-
-Três declararam Superior incompleto e um Ensino Médio. Essa informação não determina idade nem vínculo institucional. Não vou comparar escolaridades com esse grupo. Também não trato os outros documentos como abandono: o recorte não permite concluir isso.
 
 ## Os acertos aumentaram nos quatro pares
 
